@@ -1,0 +1,14 @@
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.csproj.AssemblyReference.cache
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.AssemblyInfoInputs.cache
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.AssemblyInfo.cs
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.csproj.CoreCompileInputs.cache
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\bin\Debug\net9.0\KASHOP.DAL.deps.json
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\bin\Debug\net9.0\KASHOP.DAL.runtimeconfig.json
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\bin\Debug\net9.0\KASHOP.DAL.dll
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\bin\Debug\net9.0\KASHOP.DAL.pdb
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.dll
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\refint\KASHOP.DAL.dll
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.pdb
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\KASHOP.DAL.genruntimeconfig.cache
+C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP.DAL\obj\Debug\net9.0\ref\KASHOP.DAL.dll
