@@ -1,5 +1,7 @@
 
+using KASHOP.BLL.serveic;
 using KASHOP.DAL.DATA;
+using KASHOP.DAL.Repostriy;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -43,7 +45,11 @@ namespace KASHOP2.PL
                     QueryStringKey = "lang"
                 });
             });
+            // Categoryserveic: ICategoryService
             builder.Services.AddSwaggerGen();
+            builder.Services.AddScoped<IcategoryRepstriy, Categoryrepostry>();
+            builder.Services.AddScoped<ICategoryService, Categoryserveic>();
+
             var app = builder.Build();
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
