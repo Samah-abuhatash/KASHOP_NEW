@@ -13,9 +13,9 @@ namespace KASHOP.BLL.serveic
 {
     public class Categoryserveic : ICategoryService
     {
-        private readonly Categoryrepostry _categoryrepostry;
+        private readonly IcategoryRepstriy _categoryrepostry;
 
-        public Categoryserveic(Categoryrepostry categoryrepostry)
+        public Categoryserveic(IcategoryRepstriy categoryrepostry)
         {
             _categoryrepostry = categoryrepostry;
         }

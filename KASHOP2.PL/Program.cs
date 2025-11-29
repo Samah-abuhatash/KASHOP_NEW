@@ -1,7 +1,10 @@
-
+﻿
 using KASHOP.BLL.serveic;
 using KASHOP.DAL.DATA;
+using KASHOP.DAL.Moadels;
 using KASHOP.DAL.Repostriy;
+using KASHOP.DAL.Utils;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -11,7 +14,7 @@ namespace KASHOP2.PL
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +31,8 @@ namespace KASHOP2.PL
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
   options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+      //builder.Services.AddControllers();
+            builder.Services.AddIdentity<Applicationuser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
             const string defaultCulture = "en";
             var supportedCultures = new[]
             {
@@ -46,10 +51,14 @@ namespace KASHOP2.PL
                 });
             });
             // Categoryserveic: ICategoryService
+            // Categoryrepostry: IcategoryRepstriy
+            builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddScoped<IcategoryRepstriy, Categoryrepostry>();
+             builder.Services.AddScoped<IcategoryRepstriy, Categoryrepostry>();
+          //  builder.Services.AddScoped<Categoryrepostry>();
             builder.Services.AddScoped<ICategoryService, Categoryserveic>();
-
+            builder.Services.AddScoped<ISeedData,RoleSeedData>();
+            builder.Services.AddScoped<ISeedData,UserSeedData>();
             var app = builder.Build();
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
@@ -65,8 +74,16 @@ namespace KASHOP2.PL
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
-
+            
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var seeders = services.GetServices<ISeedData>();
+                foreach (var seeder in seeders)
+                {
+                    await seeder.DataSeed();
+                }
+            }
             app.MapControllers();
 
             app.Run();

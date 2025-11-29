@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\KASHOP.DAL"
+    "\\KASHOP.DAL",
+    "\\KASHOP2.PL"
   ],
-  "SelectedNode": "\\KASHOP.DAL\\NewFile",
+  "SelectedNode": "\\KASHOP2.PL\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
