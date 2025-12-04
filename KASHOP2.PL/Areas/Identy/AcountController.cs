@@ -1,0 +1,41 @@
+﻿using KASHOP.BLL.serveic;
+using KASHOP.DAL.DTOS.Request;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace KASHOP2.PL.Areas.Identy
+{
+    [Route("api/auth/[controller]")]
+    [ApiController]
+    public class AcountController : ControllerBase
+    {
+        private readonly IAuthenticationService _authenticationService;
+
+        public AcountController(IAuthenticationService authenticationService)
+        {
+            _authenticationService = authenticationService;
+        }
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register(RegisterRequest request)
+        {
+            var result = await _authenticationService.RegisterAsync(request);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+        [HttpPost("login")]
+        public async Task<IActionResult> login(LoginRequest request)
+        {
+            var result = await _authenticationService.LoginAsync(request);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
+
+    }
+}

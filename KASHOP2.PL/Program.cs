@@ -59,6 +59,7 @@ namespace KASHOP2.PL
             builder.Services.AddScoped<ICategoryService, Categoryserveic>();
             builder.Services.AddScoped<ISeedData,RoleSeedData>();
             builder.Services.AddScoped<ISeedData,UserSeedData>();
+            builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
             var app = builder.Build();
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
