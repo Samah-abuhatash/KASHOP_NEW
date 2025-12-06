@@ -6,6 +6,7 @@ using KASHOP.DAL.Moadels;
 using KASHOP.DAL.Repostriy;
 using KASHOP2.PL.Resources;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,7 @@ namespace KASHOP2.PL.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoresController : ControllerBase
     {
         private readonly ICategoryService _categoryService;

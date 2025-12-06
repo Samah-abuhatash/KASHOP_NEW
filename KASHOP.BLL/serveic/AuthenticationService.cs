@@ -4,15 +4,22 @@ using KASHOP.DAL.DTOS.Response;
 using KASHOP.DAL.Moadels;
 using Mapster;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 public class AuthenticationService : IAuthenticationService
 {
     private readonly UserManager<Applicationuser> _userManager;
+    private readonly IConfiguration _configuration;
 
-    public AuthenticationService(UserManager<Applicationuser> userManager)
+    public AuthenticationService(UserManager<Applicationuser> userManager,IConfiguration configuration)
     {
         _userManager = userManager;
+        _configuration = configuration;
     }
 
     public async Task<RegisterResponse> RegisterAsync(RegisterRequest registerRequest)
@@ -82,7 +89,8 @@ public class AuthenticationService : IAuthenticationService
             return new LoginResponse
             {
                 Success = true,
-                messages = "Login successfully"
+                messages = "Login successfully",
+               AccessToken= await GenerateAccessToken(user)
             };
         }
         catch (Exception ex)
@@ -97,6 +105,28 @@ public class AuthenticationService : IAuthenticationService
         }
 
     }
+    private async Task<string> GenerateAccessToken(Applicationuser user)
+    {
+        var authClaims = new List<Claim>
+    {
+        
+        new Claim("id", user.Id),
+        new Claim("userName", user.UserName),
+        new Claim("email",user.Email)
+    };
 
-    
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecurityKey"]));
+        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+        var token = new JwtSecurityToken(
+            issuer: _configuration["Jwt:Issuer"],
+            audience: _configuration["Jwt:Audience"],
+            claims: authClaims,
+            expires: DateTime.UtcNow.AddMinutes(30),
+            signingCredentials: creds);
+
+        return new JwtSecurityTokenHandler().WriteToken(token);
+    }
+
+
 }
