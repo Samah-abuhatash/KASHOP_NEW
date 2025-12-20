@@ -6,6 +6,7 @@ using KASHOP.DAL.Repostriy;
 using KASHOP.DAL.Utils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -31,7 +32,21 @@ namespace KASHOP2.PL
 
 
             // Test test = new Test();
-            builder.Services.AddIdentity<Applicationuser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+            builder.Services.AddIdentity<Applicationuser, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequiredLength = 8;
+
+                options.User.RequireUniqueEmail = true;
+
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+
+                options.SignIn.RequireConfirmedEmail = true;
+            }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
   options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -113,7 +128,10 @@ namespace KASHOP2.PL
             builder.Services.AddScoped<ICategoryService, Categoryserveic>();
             builder.Services.AddScoped<ISeedData,RoleSeedData>();
             builder.Services.AddScoped<ISeedData,UserSeedData>();
+            builder.Services.AddScoped<IEmailSender, EmailSender>();
+
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+
             var app = builder.Build();
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 

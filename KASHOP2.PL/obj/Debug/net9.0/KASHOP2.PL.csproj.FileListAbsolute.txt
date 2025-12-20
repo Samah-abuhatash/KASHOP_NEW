@@ -176,7 +176,6 @@ C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP2.PL\bin\De
 C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP2.PL\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP2.PL\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP2.PL\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP2.PL\obj\Debug\net9.0\KASHOP2.PL.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP2.PL\obj\Debug\net9.0\KASHOP2.PL.sourcelink.json
 C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP2.PL\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\OMEN\OneDrive\Documents\asp12\api\project2api\KASHOP2\KASHOP2.PL\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll

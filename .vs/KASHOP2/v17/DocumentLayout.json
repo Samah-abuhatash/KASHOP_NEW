@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop2.pl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|solutionrelative:kashop2.pl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\dtos\\request\\resetpasworldrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\dtos\\request\\resetpasworldrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop2.pl\\controllers\\categorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|solutionrelative:kashop2.pl\\controllers\\categorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\dtos\\request\\requsettranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\dtos\\request\\requsettranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop2.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|solutionrelative:kashop2.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\dtos\\response\\responsecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\dtos\\response\\responsecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\dtos\\response\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\dtos\\response\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\dtos\\response\\resetpassworldresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\dtos\\response\\resetpassworldresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\utils\\userseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\utils\\userseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\utils\\roleseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\utils\\roleseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop2.pl\\areas\\identy\\acountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|solutionrelative:kashop2.pl\\areas\\identy\\acountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.bll\\serveic\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\serveic\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\utils\\iseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\utils\\iseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,22 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Program.cs",
-              "RelativeDocumentMoniker": "KASHOP2.PL\\Program.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Program.cs",
-              "RelativeToolTip": "KASHOP2.PL\\Program.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAUwJMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:06:30.51Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -67,94 +45,89 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoresController.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Controllers\\CategoresController.cs",
-              "RelativeDocumentMoniker": "KASHOP2.PL\\Controllers\\CategoresController.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Controllers\\CategoresController.cs",
-              "RelativeToolTip": "KASHOP2.PL\\Controllers\\CategoresController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:29:48.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserSeedData.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\Utils\\UserSeedData.cs",
-              "RelativeDocumentMoniker": "KASHOP.DAL\\Utils\\UserSeedData.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\Utils\\UserSeedData.cs",
-              "RelativeToolTip": "KASHOP.DAL\\Utils\\UserSeedData.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwCIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:25:06.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoleSeedData.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\Utils\\RoleSeedData.cs",
-              "RelativeDocumentMoniker": "KASHOP.DAL\\Utils\\RoleSeedData.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\Utils\\RoleSeedData.cs",
-              "RelativeToolTip": "KASHOP.DAL\\Utils\\RoleSeedData.cs",
+              "Title": "Requsettranslation.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Request\\Requsettranslation.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\DTOS\\Request\\Requsettranslation.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Request\\Requsettranslation.cs",
+              "RelativeToolTip": "KASHOP.DAL\\DTOS\\Request\\Requsettranslation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:25:03.855Z",
+              "WhenOpened": "2025-12-20T12:34:21.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ISeedData.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\Utils\\ISeedData.cs",
-              "RelativeDocumentMoniker": "KASHOP.DAL\\Utils\\ISeedData.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\Utils\\ISeedData.cs",
-              "RelativeToolTip": "KASHOP.DAL\\Utils\\ISeedData.cs",
+              "DocumentIndex": 2,
+              "Title": "Responsecategory.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Response\\Responsecategory.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\DTOS\\Response\\Responsecategory.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Response\\Responsecategory.cs",
+              "RelativeToolTip": "KASHOP.DAL\\DTOS\\Response\\Responsecategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:25:01.867Z",
+              "WhenOpened": "2025-12-20T12:34:17.39Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginResponse.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Response\\LoginResponse.cs",
-              "RelativeDocumentMoniker": "KASHOP.DAL\\DTOS\\Response\\LoginResponse.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Response\\LoginResponse.cs",
-              "RelativeToolTip": "KASHOP.DAL\\DTOS\\Response\\LoginResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Title": "ResetpassworldResponse.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Response\\ResetpassworldResponse.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\DTOS\\Response\\ResetpassworldResponse.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Response\\ResetpassworldResponse.cs",
+              "RelativeToolTip": "KASHOP.DAL\\DTOS\\Response\\ResetpassworldResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:20:56.002Z",
+              "WhenOpened": "2025-12-20T12:34:12.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\appsettings.json",
-              "RelativeDocumentMoniker": "KASHOP2.PL\\appsettings.json",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\appsettings.json",
-              "RelativeToolTip": "KASHOP2.PL\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-06T12:08:53.767Z",
+              "Title": "ResetpasworldRequest.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Request\\ResetpasworldRequest.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\DTOS\\Request\\ResetpasworldRequest.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DTOS\\Request\\ResetpasworldRequest.cs",
+              "RelativeToolTip": "KASHOP.DAL\\DTOS\\Request\\ResetpasworldRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T12:33:34.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "AcountController.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\Identy\\AcountController.cs",
+              "RelativeDocumentMoniker": "KASHOP2.PL\\Areas\\Identy\\AcountController.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\Identy\\AcountController.cs",
+              "RelativeToolTip": "KASHOP2.PL\\Areas\\Identy\\AcountController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T12:32:47.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\AuthenticationService.cs",
               "RelativeDocumentMoniker": "KASHOP.BLL\\serveic\\AuthenticationService.cs",
               "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\AuthenticationService.cs",
               "RelativeToolTip": "KASHOP.BLL\\serveic\\AuthenticationService.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAADwv4MAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAAAAYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T10:21:13.273Z",
+              "WhenOpened": "2025-12-20T06:39:51.382Z",
               "EditorCaption": ""
             }
           ]

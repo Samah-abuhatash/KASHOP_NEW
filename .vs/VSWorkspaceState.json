@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\KASHOP.DAL",
-    "\\KASHOP2.PL"
+    "\\KASHOP2.PL",
+    "\\KASHOP2.PL\\Resources"
   ],
-  "SelectedNode": "\\KASHOP2.PL\\Program.cs",
+  "SelectedNode": "\\KASHOP2.PL\\Resources\\SharedResource.resx",
   "PreviewInSolutionExplorer": false
 }

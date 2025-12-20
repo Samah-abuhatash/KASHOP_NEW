@@ -12,7 +12,11 @@ namespace KASHOP.BLL.serveic
     {
         Task<RegisterResponse> RegisterAsync(RegisterRequest registerRequest);
         Task<LoginResponse> LoginAsync(LoginRequest loginRequest);
-    }
+        Task<bool> ConfirmEmailAsync(string token, string userid);
+        Task<ForgotPasswordResponse> RequestPasswordReset(ForgotPasswordRequest request);
+        Task<ResetpassworldResponse> Resetpassworld(ResetpasworldRequest request);
 
+
+    }
 }
 

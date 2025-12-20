@@ -1,5 +1,6 @@
 ﻿using KASHOP.BLL.serveic;
 using KASHOP.DAL.DTOS.Request;
+using KASHOP.DAL.DTOS.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,7 +36,37 @@ namespace KASHOP2.PL.Areas.Identy
             }
             return Ok(result);
         }
+        [HttpGet("ConfirmEmail")]
+        public async Task<IActionResult> ConfirmEmail(string token, string userId)
+        {
+            var result = await _authenticationService.ConfirmEmailAsync(token, userId);
+            return Ok(result);
+        }
+        [HttpPost("SendCode")]
+        public async Task<IActionResult> RequestPasswordReset(ForgotPasswordRequest request)
+        {
+            var result = await _authenticationService.RequestPasswordReset(request);
 
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+
+            return Ok(result);
+        }
+
+
+
+        [HttpPatch("ResetPassword")]
+        public async Task<IActionResult> ResetPassword(ResetpasworldRequest request)
+        {
+            var result = await _authenticationService.Resetpassworld(request);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
 
     }
 }
