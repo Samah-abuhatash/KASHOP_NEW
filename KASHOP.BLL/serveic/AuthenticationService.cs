@@ -164,12 +164,15 @@ public class AuthenticationService : IAuthenticationService
     }
     private async Task<string> GenerateAccessToken(Applicationuser user)
     {
+        var roles = await _userManager.GetRolesAsync(user);
+
         var authClaims = new List<Claim>
     {
 
         new Claim("id", user.Id),
         new Claim("userName", user.UserName),
-        new Claim("email",user.Email)
+        new Claim("email",user.Email),
+         new Claim(ClaimTypes.Role, string.Join(',', roles))
     };
 
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecurityKey"]));

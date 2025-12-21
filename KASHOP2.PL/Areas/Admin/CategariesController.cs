@@ -5,12 +5,13 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
+using System.Security.Claims;
 
 namespace KASHOP2.PL.Areas.Admin
 {
     [Route("api/admin/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize(Roles ="Admin")]
     public class CategariesController : ControllerBase
     {
         private readonly ICategoryService _category;
@@ -24,7 +25,9 @@ namespace KASHOP2.PL.Areas.Admin
 
         [HttpPost("")]
         public IActionResult create(CategoryRequest request)
+
         {
+            
             var response = _category.createl_categres(request);
             return Ok(new
             {

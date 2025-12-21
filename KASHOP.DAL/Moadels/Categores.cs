@@ -8,6 +8,7 @@ namespace KASHOP.DAL.Moadels
 {
     public class Categores: Basemodels
     {
+        
         public List<CategoryTranslation> translations { get; set; }
 
     }

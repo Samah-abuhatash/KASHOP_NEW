@@ -1,13 +1,14 @@
-﻿using KASHOP.DAL.DTOS.Response;
+﻿using KASHOP.DAL.DTOS.Request;
+using KASHOP.DAL.DTOS.Response;
 using KASHOP.DAL.Moadels;
 using KASHOP.DAL.Repostriy;
+using Mapster;
+using Microsoft.AspNetCore.Http.HttpResults;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Mapster;
-using KASHOP.DAL.DTOS.Request;
 
 namespace KASHOP.BLL.serveic
 {
@@ -22,6 +23,7 @@ namespace KASHOP.BLL.serveic
         public Responsecategory createl_categres(CategoryRequest request)
         {
             var category = request.Adapt<Categores>();
+           
             _categoryrepostry.create(category);
             return category.Adapt<Responsecategory>();
         }

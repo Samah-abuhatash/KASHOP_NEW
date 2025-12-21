@@ -4,6 +4,7 @@ using KASHOP.DAL.DATA;
 using KASHOP.DAL.Moadels;
 using KASHOP.DAL.Repostriy;
 using KASHOP.DAL.Utils;
+using KASHOP.PL;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -121,17 +122,10 @@ namespace KASHOP2.PL
             });
             // Categoryserveic: ICategoryService
             // Categoryrepostry: IcategoryRepstriy
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-             builder.Services.AddScoped<IcategoryRepstriy, Categoryrepostry>();
-          //  builder.Services.AddScoped<Categoryrepostry>();
-            builder.Services.AddScoped<ICategoryService, Categoryserveic>();
-            builder.Services.AddScoped<ISeedData,RoleSeedData>();
-            builder.Services.AddScoped<ISeedData,UserSeedData>();
-            builder.Services.AddScoped<IEmailSender, EmailSender>();
-
-            builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
-
+            Appconfiguration.Config(builder.Services);
             var app = builder.Build();
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
