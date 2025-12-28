@@ -14,5 +14,6 @@ namespace KASHOP.DAL.DTOS.Response
         public Status status { get; set; }
 
         public List<Responsetarnslation> translations { get; set; }
+
     }
 }

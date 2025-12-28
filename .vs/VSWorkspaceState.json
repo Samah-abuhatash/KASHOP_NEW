@@ -1,10 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+    "\\KASHOP.BLL",
+    "\\KASHOP.BLL\\serveic",
     "\\KASHOP.DAL",
+    "\\KASHOP.DAL\\DTOS",
+    "\\KASHOP.DAL\\DTOS\\Request",
+    "\\KASHOP.DAL\\Moadels",
+    "\\KASHOP.DAL\\Repostriy",
     "\\KASHOP2.PL",
-    "\\KASHOP2.PL\\Resources"
+    "\\KASHOP2.PL\\Areas",
+    "\\KASHOP2.PL\\Areas\\Admin"
   ],
-  "SelectedNode": "\\KASHOP2.PL\\Resources\\SharedResource.resx",
+  "SelectedNode": "\\KASHOP2.PL\\Areas\\Admin\\CategariesController.cs",
   "PreviewInSolutionExplorer": false
 }

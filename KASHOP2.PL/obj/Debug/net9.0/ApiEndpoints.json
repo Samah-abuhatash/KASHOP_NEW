@@ -16,6 +16,59 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KASHOP2.PL.Areas.Admin.CategariesController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/admin/Categaries/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "KASHOP.DAL.DTOS.Request.CategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP2.PL.Areas.Admin.CategariesController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/admin/Categaries/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP2.PL.Areas.Admin.CategariesController",
+    "Method": "ToggleStatus",
+    "RelativePath": "api/admin/Categaries/toggle-status/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KASHOP2.PL.Areas.Identy.AcountController",
     "Method": "ConfirmEmail",
     "RelativePath": "api/auth/Acount/ConfirmEmail",

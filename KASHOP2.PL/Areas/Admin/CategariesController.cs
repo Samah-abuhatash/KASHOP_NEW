@@ -14,27 +14,78 @@ namespace KASHOP2.PL.Areas.Admin
     [Authorize(Roles ="Admin")]
     public class CategariesController : ControllerBase
     {
-        private readonly ICategoryService _category;
+        //private readonly ICategoryService _category;
+        private readonly ICategoryService _categoryserves;
         private readonly IStringLocalizer<SharedResource> _localizer;
 
-        public CategariesController(ICategoryService category, IStringLocalizer<SharedResource> localizer)
+        public CategariesController(ICategoryService categoryserves, IStringLocalizer<SharedResource> localizer)
         {
-            _category = category;
+            
+            _categoryserves = categoryserves;
             _localizer = localizer;
         }
 
         [HttpPost("")]
-        public IActionResult create(CategoryRequest request)
+        public  async Task<IActionResult> create(CategoryRequest request)
 
         {
             
-            var response = _category.createl_categres(request);
+            var response =  await _categoryserves.createl_categres(request);
             return Ok(new
             {
                 message = _localizer["Success"].Value
 
 
             });
+        }
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> UpdateCategory([FromRoute] int id, [FromBody] CategoryRequest request)
+        {
+            var result = await _categoryserves.UpdateCategoryAsync(id, request);
+
+            if (!result.Success)
+            {
+                if (result.messages.Contains("Not Found"))
+                {
+                    return NotFound(result);
+                }
+                return BadRequest(result);
+            }
+
+            return Ok(result);
+        }
+        [HttpPatch("toggle-status/{id}")]
+        public async Task<IActionResult> ToggleStatus(int id)
+        {
+            var result = await _categoryserves.ToggleStatus(id);
+
+            if (!result.Success)
+            {
+                if (result.messages.Contains("Not Found"))
+                {
+                    return NotFound(result);
+                }
+                return BadRequest(result);
+            }
+
+            return Ok(result);
+        }
+        [HttpDelete("{id}")]
+
+        public async Task<IActionResult> DeleteCategory([FromRoute] int id)
+        {
+            var result = await _categoryserves.DeleteCategoryAsync(id);
+
+            if (!result.Success)
+            {
+                if (result.messages.Contains("Not Found"))
+                {
+                    return NotFound(result);
+                }
+                return BadRequest(result);
+            }
+
+            return Ok(result);
         }
     }
 }

@@ -9,8 +9,11 @@ namespace KASHOP.DAL.Repostriy
 {
     public  interface IcategoryRepstriy
     {
-        List<Categores> Getall();
-        Categores create(Categores request);
+         Task<List<Categores>> GetAllAsync();
+         Task<Categores> createAsync(Categores request);
+        Task<Categores?> FindByIdAsync(int id);
+        Task DeleteAsync(Categores category);
+        Task<Categores?> UpdateAsync(Categores category);
     }
 
 }

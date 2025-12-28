@@ -18,18 +18,37 @@ namespace KASHOP.DAL.Repostriy
             _context = context;
         }
 
-        public Categores create(Categores request)
+        public async  Task<Categores> createAsync(Categores request)
         {
-            _context.Add(request);
-            _context.SaveChanges();
+             await _context.AddAsync(request);
+            await _context.SaveChangesAsync();
             return request;
 
 
         }
 
-        public List<Categores> Getall()
+        public async Task<List<Categores>> GetAllAsync()
         {
-            return _context.Catgores.Include(c => c.translations).ToList();
+            return await _context.Catgores
+                .Include(c => c.translations)
+                .ToListAsync();
+        }
+        public async Task<Categores?> FindByIdAsync(int id)
+        {
+            return await _context.Catgores
+                .Include(c => c.translations)
+                .FirstOrDefaultAsync(c => c.Id == id);
+        }
+        public async Task DeleteAsync(Categores category)
+        {
+            _context.Catgores.Remove(category);
+            await _context.SaveChangesAsync();
+        }
+        public async Task<Categores?> UpdateAsync(Categores category)
+        {
+            _context.Catgores.Update(category);
+            await _context.SaveChangesAsync();
+            return category;
         }
     }
 }
