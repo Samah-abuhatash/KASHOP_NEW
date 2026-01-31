@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KASHOP.DAL.Repostriy
+namespace KASHOP.DAL.Repostriy.Catgores
 {
     public  interface IcategoryRepstriy
     {

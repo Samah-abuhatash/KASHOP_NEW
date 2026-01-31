@@ -85,6 +85,47 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KASHOP2.PL.Areas.Admin.ProudctsController",
+    "Method": "Create",
+    "RelativePath": "api/admin/Proudcts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Translations",
+        "Type": "System.Collections.Generic.List\u00601[[KASHOP.DAL.DTOS.Request.Proudct.ProductTranslationRequest, KASHOP.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Discount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Quantity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MainImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KASHOP2.PL.Areas.Identy.AcountController",
     "Method": "ConfirmEmail",
     "RelativePath": "api/auth/Acount/ConfirmEmail",

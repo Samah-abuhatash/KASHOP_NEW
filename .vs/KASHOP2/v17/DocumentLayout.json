@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.bll\\serveic\\proudct\\proudctserveic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\serveic\\proudct\\proudctserveic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.bll\\serveic\\catgores\\categoryservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\serveic\\catgores\\categoryservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop2.pl\\areas\\admin\\proudctscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|solutionrelative:kashop2.pl\\areas\\admin\\proudctscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\repostriy\\proudcts\\proudctrepostry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\repostriy\\proudcts\\proudctrepostry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.bll\\serveic\\proudct\\iproudctserveic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\serveic\\proudct\\iproudctserveic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,34 +33,60 @@
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProudctRepostry.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\Repostriy\\Proudcts\\ProudctRepostry.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\Repostriy\\Proudcts\\ProudctRepostry.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\Repostriy\\Proudcts\\ProudctRepostry.cs",
+              "RelativeToolTip": "KASHOP.DAL\\Repostriy\\Proudcts\\ProudctRepostry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T10:33:06.142Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DATA\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "KASHOP.DAL\\DATA\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DATA\\ApplicationDbContext.cs",
-              "RelativeToolTip": "KASHOP.DAL\\DATA\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAADwv08AAAAIAAAAAAAAAA==",
+              "Title": "ProudctServeic.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\Proudct\\ProudctServeic.cs",
+              "RelativeDocumentMoniker": "KASHOP.BLL\\serveic\\Proudct\\ProudctServeic.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\Proudct\\ProudctServeic.cs",
+              "RelativeToolTip": "KASHOP.BLL\\serveic\\Proudct\\ProudctServeic.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T05:08:23.233Z",
+              "WhenOpened": "2026-01-31T10:31:56.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProudctServeic.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\Proudct\\IProudctServeic.cs",
+              "RelativeDocumentMoniker": "KASHOP.BLL\\serveic\\Proudct\\IProudctServeic.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\Proudct\\IProudctServeic.cs",
+              "RelativeToolTip": "KASHOP.BLL\\serveic\\Proudct\\IProudctServeic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T10:31:53.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryService .cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\catgores\\CategoryService .cs",
-              "RelativeDocumentMoniker": "KASHOP.BLL\\serveic\\catgores\\CategoryService .cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\catgores\\CategoryService .cs",
-              "RelativeToolTip": "KASHOP.BLL\\serveic\\catgores\\CategoryService .cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCoAAAAIAAAAAAAAAA==",
+              "Title": "ProudctsController.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\Admin\\ProudctsController.cs",
+              "RelativeDocumentMoniker": "KASHOP2.PL\\Areas\\Admin\\ProudctsController.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\Admin\\ProudctsController.cs",
+              "RelativeToolTip": "KASHOP2.PL\\Areas\\Admin\\ProudctsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T05:09:50.891Z",
+              "WhenOpened": "2026-01-31T10:27:33.812Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

@@ -2,7 +2,7 @@
 using KASHOP.DAL.DTOS.Response.catgores;
 using KASHOP.DAL.DTOS.Response.classbase;
 using KASHOP.DAL.Moadels.catgores;
-using KASHOP.DAL.Repostriy;
+using KASHOP.DAL.Repostriy.Catgores;
 using Mapster;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;

@@ -1,6 +1,9 @@
 ﻿using KASHOP.BLL.serveic.auth;
 using KASHOP.BLL.serveic.catgores;
-using KASHOP.DAL.Repostriy;
+using KASHOP.BLL.serveic.Fileserveis;
+using KASHOP.BLL.serveic.Proudct;
+using KASHOP.DAL.Repostriy.Catgores;
+using KASHOP.DAL.Repostriy.Proudcts;
 using KASHOP.DAL.Utils;
 using Microsoft.AspNetCore.Identity.UI.Services;
 
@@ -19,6 +22,10 @@ namespace KASHOP.PL
             services.AddScoped<IEmailSender, EmailSender>();
 
             services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<Ifileservice, FileService>();
+            services.AddScoped<IProudctServeic, ProudctServeic>();
+            services.AddScoped<IProudctsRepsotry, ProudctRepostry>();
+
         }
     }
 }
