@@ -18,6 +18,8 @@ namespace KASHOP.DAL.DATA
 
         public DbSet<Categores> Catgores { get; set; }
         public DbSet<CategoryTranslation> transelation { get; set; }
+        public DbSet<Product>products { get; set; }
+        public DbSet<ProductTranslation>productTranslations { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IHttpContextAccessor httpContextAccessor)
            : base(options)
         {
@@ -35,6 +37,10 @@ namespace KASHOP.DAL.DATA
             builder.Entity<IdentityRoleClaim<string>>().ToTable("RoleClaims");
             builder.Entity<IdentityUserLogin<string>>().ToTable("UserLogins");
             builder.Entity<IdentityUserToken<string>>().ToTable("UserTokens");
+            builder.Entity<Categores>() .HasOne(c => c.User)
+                    .WithMany()
+                    .HasForeignKey(c => c.CreatedBy)
+                    .OnDelete(DeleteBehavior.NoAction);
         }
         //audit 
         public override int SaveChanges()

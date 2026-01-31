@@ -10,6 +10,7 @@ namespace KASHOP.DAL.Moadels
     {
         
         public List<CategoryTranslation> translations { get; set; }
+        public List<Product>products { get; set; }
 
     }
 }
