@@ -1,5 +1,5 @@
-﻿using KASHOP.BLL.serveic;
-using KASHOP.DAL.DTOS.Request;
+﻿using KASHOP.BLL.serveic.catgores;
+using KASHOP.DAL.DTOS.Request.Catgores;
 using KASHOP2.PL.Resources;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;

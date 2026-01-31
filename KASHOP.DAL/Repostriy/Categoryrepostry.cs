@@ -1,5 +1,5 @@
 ﻿using KASHOP.DAL.DATA;
-using KASHOP.DAL.Moadels;
+using KASHOP.DAL.Moadels.catgores;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -1,5 +1,5 @@
-﻿
-using KASHOP.BLL.serveic;
+﻿using KASHOP.BLL.serveic.auth;
+using KASHOP.BLL.serveic.catgores;
 using KASHOP.DAL.Repostriy;
 using KASHOP.DAL.Utils;
 using Microsoft.AspNetCore.Identity.UI.Services;

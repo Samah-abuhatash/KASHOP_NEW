@@ -1,4 +1,4 @@
-﻿using KASHOP.DAL.Moadels;
+﻿using KASHOP.DAL.Moadels.catgores;
 using System;
 using System.Collections.Generic;
 using System.Linq;

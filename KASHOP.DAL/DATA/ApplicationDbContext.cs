@@ -1,4 +1,6 @@
 ﻿using KASHOP.DAL.Moadels;
+using KASHOP.DAL.Moadels.catgores;
+using KASHOP.DAL.Moadels.Proudct;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;

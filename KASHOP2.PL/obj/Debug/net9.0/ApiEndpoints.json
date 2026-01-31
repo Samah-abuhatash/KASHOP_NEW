@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "KASHOP.DAL.DTOS.Request.CategoryRequest",
+        "Type": "KASHOP.DAL.DTOS.Request.Catgores.CategoryRequest",
         "IsRequired": true
       }
     ],
@@ -46,7 +46,7 @@
       },
       {
         "Name": "request",
-        "Type": "KASHOP.DAL.DTOS.Request.CategoryRequest",
+        "Type": "KASHOP.DAL.DTOS.Request.Catgores.CategoryRequest",
         "IsRequired": true
       }
     ],
@@ -115,7 +115,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "KASHOP.DAL.DTOS.Request.LoginRequest",
+        "Type": "KASHOP.DAL.DTOS.Request.Auth.LoginRequest",
         "IsRequired": true
       }
     ],
@@ -131,7 +131,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "KASHOP.DAL.DTOS.Request.RegisterRequest",
+        "Type": "KASHOP.DAL.DTOS.Request.Auth.RegisterRequest",
         "IsRequired": true
       }
     ],
@@ -147,7 +147,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "KASHOP.DAL.DTOS.Request.ResetpasworldRequest",
+        "Type": "KASHOP.DAL.DTOS.Request.Auth.ResetpasworldRequest",
         "IsRequired": true
       }
     ],
@@ -163,7 +163,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "KASHOP.DAL.DTOS.Request.ForgotPasswordRequest",
+        "Type": "KASHOP.DAL.DTOS.Request.Auth.ForgotPasswordRequest",
         "IsRequired": true
       }
     ],

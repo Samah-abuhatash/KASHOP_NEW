@@ -1,5 +1,5 @@
-﻿using KASHOP.DAL.DTOS.Response;
-using KASHOP.DAL.Moadels;
+﻿using KASHOP.DAL.DTOS.Response.catgores;
+using KASHOP.DAL.Moadels.catgores;
 using KASHOP.DAL.Repostriy;
 using Mapster;
 using System;

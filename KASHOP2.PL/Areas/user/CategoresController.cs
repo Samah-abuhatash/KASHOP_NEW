@@ -1,4 +1,4 @@
-﻿using KASHOP.BLL.serveic;
+﻿using KASHOP.BLL.serveic.catgores;
 using KASHOP.DAL.DTOS.Request;
 using KASHOP2.PL.Resources;
 using Microsoft.AspNetCore.Http;

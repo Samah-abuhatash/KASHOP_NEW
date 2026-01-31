@@ -1,5 +1,5 @@
-﻿using KASHOP.BLL.serveic;
-using KASHOP.DAL.DTOS.Request;
+﻿using KASHOP.BLL.serveic.auth;
+using KASHOP.DAL.DTOS.Request.Auth;
 using KASHOP.DAL.DTOS.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
