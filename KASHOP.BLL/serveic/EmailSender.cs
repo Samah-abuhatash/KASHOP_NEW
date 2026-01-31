@@ -17,6 +17,7 @@ namespace KASHOP.BLL.serveic
             {
                 EnableSsl = true,
                 UseDefaultCredentials = false,
+                //password cant login 
                 Credentials = new NetworkCredential("samahabuhantash10@gmail.com", "vqlc oeco jsim ksjv")
             };
 

@@ -25,15 +25,28 @@ namespace KASHOP.BLL.serveic
         public async Task<Responsecategory> createl_categres(CategoryRequest request)
         {
             var category = request.Adapt<Categores>();
+            
 
               await _categoryrepostry.createAsync(category);
             return category.Adapt<Responsecategory>();
         }
 
-        public  async Task <List<Responsecategory>> Getall_categres()
+        public  async Task <List<Responsecategory>> Getall_categres_forAdmin()
         {
             var categories =  await _categoryrepostry.GetAllAsync();
+           
             var response = categories.Adapt<List<Responsecategory>>();
+            return response;
+        }
+        public async Task<List<CatgoryUserResponse>> Getall_categres_forUser(string lang = "en")
+        {
+            var categories = await _categoryrepostry.GetAllAsync();
+            /*  var response = categories.Select(c => new CatgoryUserResponse
+              {
+                  Id = c.Id,
+                  Name = c.translations.Where(t => t.Language == lang).Select(t => t.Name).FirstOrDefault()
+              }).ToList();*/
+            var response = categories.BuildAdapter().AddParameters("lang", lang).AdaptToType<List<CatgoryUserResponse>>();
             return response;
         }
         public async Task<BaseResponse> ToggleStatus(int id)

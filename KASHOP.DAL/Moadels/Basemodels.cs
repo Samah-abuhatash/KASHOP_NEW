@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +18,8 @@ namespace KASHOP.DAL.Moadels
         public string? UpdatedBy { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public DateTime? CreatedAT { get; set; }
+        [ForeignKey("CreatedBy")]
+        public Applicationuser User{ get; set; }
+       
     }
 }

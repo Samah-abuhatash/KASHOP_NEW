@@ -21,8 +21,8 @@ namespace KASHOP2.PL.Areas.user
         }
         
         [HttpGet("")]
-        public async Task< IActionResult> index() {
-            var response =  await _category.Getall_categres();
+        public async Task< IActionResult> index([FromQuery]string lang="en") {
+            var response =  await _category.Getall_categres_forUser(lang);
             return Ok(new
             {
                 message = _localizer["Success"].Value,

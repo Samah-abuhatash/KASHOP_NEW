@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "KASHOP2.PL.Areas.Admin.CategariesController",
+    "Method": "index",
+    "RelativePath": "api/admin/Categaries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP2.PL.Areas.Admin.CategariesController",
     "Method": "create",
     "RelativePath": "api/admin/Categaries",
     "HttpMethod": "POST",
@@ -160,7 +176,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

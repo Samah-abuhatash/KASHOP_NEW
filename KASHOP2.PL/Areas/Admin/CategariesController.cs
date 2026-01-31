@@ -25,6 +25,18 @@ namespace KASHOP2.PL.Areas.Admin
             _localizer = localizer;
         }
 
+
+        [HttpGet("")]
+        public async Task<IActionResult> index([FromQuery] string lang = "en")
+        {
+            var response = await _categoryserves.Getall_categres_forAdmin();
+            return Ok(new
+            {
+                message = _localizer["Success"].Value,
+                response
+
+            });
+        }
         [HttpPost("")]
         public  async Task<IActionResult> create(CategoryRequest request)
 

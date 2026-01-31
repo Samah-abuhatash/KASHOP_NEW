@@ -305,7 +305,8 @@ public class AuthenticationService : IAuthenticationService
         }
        
         await _emailSender.SendEmailAsync(request.Email, "change Password:", $"<p>Your Password change</p>");
-
+        user.CodeResetPassword = null;
+        await _userManager.UpdateAsync(user);
         return new ResetpassworldResponse
         {
             Success = true,

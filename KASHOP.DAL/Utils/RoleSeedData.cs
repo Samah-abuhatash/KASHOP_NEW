@@ -11,7 +11,7 @@ namespace KASHOP.DAL.Utils
     public class RoleSeedData : ISeedData
     {
         private readonly RoleManager<IdentityRole> _roleManager;
-
+        //serves add scop recod 
         public RoleSeedData(RoleManager<IdentityRole> roleManager)
         {
             _roleManager = roleManager;
@@ -19,6 +19,7 @@ namespace KASHOP.DAL.Utils
         public async Task DataSeed()
         {
             string[] roles = ["SuperAdmin", "Admin", "User"];
+            //no data===>add 
             if (!await _roleManager.Roles.AnyAsync())
             {
 

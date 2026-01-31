@@ -31,6 +31,7 @@ namespace KASHOP.DAL.Repostriy
         {
             return await _context.Catgores
                 .Include(c => c.translations)
+                .Include(c => c.User)
                 .ToListAsync();
         }
         public async Task<Categores?> FindByIdAsync(int id)

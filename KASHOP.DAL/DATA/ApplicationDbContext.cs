@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace KASHOP.DAL.DATA
 {
-    public  class ApplicationDbContext : IdentityDbContext<Applicationuser>
+    public class ApplicationDbContext : IdentityDbContext<Applicationuser>
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
 
@@ -36,27 +36,62 @@ namespace KASHOP.DAL.DATA
             builder.Entity<IdentityUserLogin<string>>().ToTable("UserLogins");
             builder.Entity<IdentityUserToken<string>>().ToTable("UserTokens");
         }
+        //audit 
         public override int SaveChanges()
         {
-            var entries = ChangeTracker.Entries<Basemodels>();
-
-            var currentUserId = _httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            foreach (var entityEntry in entries)
+            if (_httpContextAccessor.HttpContext != null)
             {
-                if (entityEntry.State == EntityState.Added)
+                var entries = ChangeTracker.Entries<Basemodels>();
+
+                var currentUserId = _httpContextAccessor
+                    .HttpContext
+                    .User
+                    .FindFirstValue("id ");
+
+                foreach (var entityEntry in entries)
                 {
-                    entityEntry.Property(x => x.CreatedBy).CurrentValue = currentUserId;
-                    entityEntry.Property(x => x.CreatedAT).CurrentValue = DateTime.UtcNow;
-                }
-                else if (entityEntry.State == EntityState.Modified)
-                {
-                    entityEntry.Property(x => x.UpdatedBy).CurrentValue = currentUserId;
-                    entityEntry.Property(x => x.UpdatedAt).CurrentValue = DateTime.UtcNow;
+                    if (entityEntry.State == EntityState.Added)
+                    {
+                        entityEntry.Property(x => x.CreatedBy).CurrentValue = currentUserId;
+                        entityEntry.Property(x => x.CreatedAT).CurrentValue = DateTime.UtcNow;
+                    }
+                    else if (entityEntry.State == EntityState.Modified)
+                    {
+                        entityEntry.Property(x => x.UpdatedBy).CurrentValue = currentUserId;
+                        entityEntry.Property(x => x.UpdatedAt).CurrentValue = DateTime.UtcNow;
+                    }
                 }
             }
 
             return base.SaveChanges();
+        }
+
+
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            if (_httpContextAccessor.HttpContext != null)
+            {
+                var entries = ChangeTracker.Entries<Basemodels>();
+                var currentUserId = _httpContextAccessor.HttpContext.User
+                    .FindFirstValue("id");
+
+                foreach (var entityEntry in entries)
+                {
+                    if (entityEntry.State == EntityState.Added)
+                    {
+                        entityEntry.Property(x => x.CreatedBy).CurrentValue = currentUserId;
+                        entityEntry.Property(x => x.UpdatedAt).CurrentValue = DateTime.UtcNow;
+                    }
+                    else if (entityEntry.State == EntityState.Modified)
+                    {
+                        entityEntry.Property(x => x.UpdatedBy).CurrentValue = currentUserId;
+                        entityEntry.Property(x => x.UpdatedAt).CurrentValue = DateTime.UtcNow;
+                    }
+                }
+            }
+
+            return base.SaveChangesAsync(cancellationToken);
         }
     }
 }

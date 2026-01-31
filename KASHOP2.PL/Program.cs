@@ -1,4 +1,5 @@
 ﻿
+using KASHOP.BLL.Mapsterconfigration;
 using KASHOP.BLL.serveic;
 using KASHOP.DAL.DATA;
 using KASHOP.DAL.Moadels;
@@ -51,6 +52,8 @@ namespace KASHOP2.PL
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
   options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            //token add
+
             builder.Services.AddAuthentication(opt =>
             {
                 opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -58,8 +61,9 @@ namespace KASHOP2.PL
             }).AddJwtBearer(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
-        {
+        {//sure token in location 
             ValidateIssuer = true,
+            //domain 
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
@@ -126,6 +130,7 @@ namespace KASHOP2.PL
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             Appconfiguration.Config(builder.Services);
+            MapsterConfig.MapsterConfigRegsiter();
             var app = builder.Build();
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
@@ -141,7 +146,8 @@ namespace KASHOP2.PL
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
-            
+            // define scope and remove user role
+
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;

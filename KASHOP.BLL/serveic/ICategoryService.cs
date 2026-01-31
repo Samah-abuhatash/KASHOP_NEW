@@ -11,11 +11,12 @@ namespace KASHOP.BLL.serveic
 {
     public interface ICategoryService
     {
-        Task<List<Responsecategory>> Getall_categres();
+        Task<List<Responsecategory>> Getall_categres_forAdmin();
         Task<Responsecategory> createl_categres(CategoryRequest request);
         Task<BaseResponse> DeleteCategoryAsync(int id);
         Task<BaseResponse> UpdateCategoryAsync(int id, CategoryRequest request);
         Task<BaseResponse> ToggleStatus(int id);
+        Task<List<CatgoryUserResponse>> Getall_categres_forUser(string lang = "en");
 
     }
 }
