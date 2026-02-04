@@ -1,10 +1,13 @@
 ﻿using KASHOP.BLL.serveic.auth;
+using KASHOP.BLL.Tokens;
 using KASHOP.DAL.DTOS.Request.Auth;
+using KASHOP.DAL.DTOS.Request.Token;
 using KASHOP.DAL.DTOS.Response.Auth;
 using KASHOP.DAL.Moadels;
 using Mapster;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -18,13 +21,15 @@ public class AuthenticationService : IAuthenticationService
     private readonly IConfiguration _configuration;
     private readonly IEmailSender _emailSender;
     private readonly SignInManager<Applicationuser> _signInManager;
+    private readonly ITokenService _tokenService;
 
-    public AuthenticationService(UserManager<Applicationuser> userManager, IConfiguration configuration, IEmailSender emailSender, SignInManager<Applicationuser> signInManager)
+    public AuthenticationService(UserManager<Applicationuser> userManager, IConfiguration configuration, IEmailSender emailSender, SignInManager<Applicationuser> signInManager,ITokenService tokenService)
     {
         _userManager = userManager;
         _configuration = configuration;
         _emailSender = emailSender;
         _signInManager = signInManager;
+        _tokenService = tokenService;
     }
 
     public async Task<RegisterResponse> RegisterAsync(RegisterRequest registerRequest)
@@ -128,13 +133,20 @@ public class AuthenticationService : IAuthenticationService
                 };
             }
 
+            var accessToken = await _tokenService.GenerateAccessToken(user);
+            var refreshToken = _tokenService.GenerateRefreshToken();
+
+            user.RefreshToken = refreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+          await  _userManager.UpdateAsync(user);
 
 
             return new LoginResponse
             {
                 Success = true,
                 messages = "Login successfully",
-                AccessToken = await GenerateAccessToken(user)
+                AccessToken = accessToken,
+                RefreshToken=refreshToken
             };
         }
         catch (Exception ex)
@@ -162,6 +174,7 @@ public class AuthenticationService : IAuthenticationService
 
         return true;
     }
+    /*
     private async Task<string> GenerateAccessToken(Applicationuser user)
     {
         var roles = await _userManager.GetRolesAsync(user);
@@ -186,7 +199,7 @@ public class AuthenticationService : IAuthenticationService
             signingCredentials: creds);
 
         return new JwtSecurityTokenHandler().WriteToken(token);
-    }
+    }*/
     public async Task<ForgotPasswordResponse> RequestPasswordReset(ForgotPasswordRequest request)
     {
         var user = await _userManager.FindByEmailAsync(request.Email);
@@ -316,4 +329,38 @@ public class AuthenticationService : IAuthenticationService
 
     }
 
+    public async Task<LoginResponse> RefreshTokenAsync( TokenApiModel request)
+    {
+        string accessToken = request.AccessToken;
+        string refreshToken = request.RefreshToken;
+
+        var principal = _tokenService.GetPrincipalFromExpiredToken(accessToken);
+
+        var userName = principal.Identity.Name;
+
+        var user = await _userManager.Users.FirstOrDefaultAsync(u => u.UserName == userName);
+
+        if (user is null || user.RefreshToken != refreshToken || user.RefreshTokenExpiryTime <= DateTime.UtcNow)
+        {
+            return new LoginResponse()
+            {
+                Success = false,
+                messages = "invalid client request"
+            };
+        }
+
+        var newAccessToken = await _tokenService.GenerateAccessToken(user);
+        var newRefreshToken = _tokenService.GenerateRefreshToken();
+        user.RefreshToken = newRefreshToken;
+
+        await _userManager.UpdateAsync(user);
+
+        return new LoginResponse
+        {
+            Success = true,
+            messages = "Token Refreshed",
+            AccessToken = newAccessToken,
+            RefreshToken = newRefreshToken,
+        };
+    }
 }

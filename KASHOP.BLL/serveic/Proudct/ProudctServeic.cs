@@ -1,7 +1,9 @@
 ﻿using KASHOP.BLL.serveic.Fileserveis;
 using KASHOP.DAL.DTOS.Request.Proudct;
+using KASHOP.DAL.DTOS.Response.catgores;
 using KASHOP.DAL.DTOS.Response.Proudct;
 using KASHOP.DAL.Moadels.Proudct;
+using KASHOP.DAL.Repostriy.Catgores;
 using KASHOP.DAL.Repostriy.Proudcts;
 using Mapster;
 using System;
@@ -31,10 +33,30 @@ namespace KASHOP.BLL.serveic.Proudct
                 var imagePath = await _ifileservice.UploadAsync(request.MainImage);
                 product.MainImage = imagePath;
             }
+            if (request.SubImages != null)
+            {
+                product.subImages = new List<ProductImage>();
+
+                foreach (var file in request.SubImages)
+                {
+                    var imagePath = await _ifileservice.UploadAsync(file);
+                    product.subImages.Add(new ProductImage
+                    {
+                        ImageName = imagePath
+                    });
+                }
+            }
 
             await _proudctServeic.AddAsync(product);
 
             return product.Adapt<ProductResponse>();
+        }
+        public async Task<List<ProductResponse>> Getall_proudcts_forAdmin()
+        {
+            var products = await _proudctServeic.GetAllAsync();
+
+            var response = products.Adapt<List<ProductResponse>>();
+            return response;
         }
     }
 }

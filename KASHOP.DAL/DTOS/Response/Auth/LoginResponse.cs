@@ -11,6 +11,8 @@ namespace KASHOP.DAL.DTOS.Response.Auth
     {
        
         public string? AccessToken { get; set; }
+        public string? RefreshToken { get; set; }
+
 
     }
 }

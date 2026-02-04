@@ -1,5 +1,6 @@
 ﻿using KASHOP.BLL.serveic.auth;
 using KASHOP.DAL.DTOS.Request.Auth;
+using KASHOP.DAL.DTOS.Request.Token;
 using KASHOP.DAL.DTOS.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -67,6 +68,15 @@ namespace KASHOP2.PL.Areas.Identy
             }
             return Ok(result);
         }
-
+        [HttpPatch("RefreshToken")]
+        public async Task<IActionResult> RefreshTokenAsync(TokenApiModel request)
+        {
+            var result = await _authenticationService.RefreshTokenAsync(request);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
     }
 }

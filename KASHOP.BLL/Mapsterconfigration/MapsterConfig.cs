@@ -1,5 +1,7 @@
 ﻿using KASHOP.DAL.DTOS.Response.catgores;
+using KASHOP.DAL.DTOS.Response.Proudct;
 using KASHOP.DAL.Moadels.catgores;
+using KASHOP.DAL.Moadels.Proudct;
 using KASHOP.DAL.Repostriy;
 using Mapster;
 using System;
@@ -21,6 +23,9 @@ namespace KASHOP.BLL.Mapsterconfigration
     .Map(dest => dest.Name, source => source.translations
     .Where(t => t.Language == MapContext.Current.Parameters["lang"].ToString())
     .Select(t => t.Name).FirstOrDefault());
+            //image link 
+            TypeAdapterConfig<Product, ProductResponse>.NewConfig()
+    .Map(dest => dest.MainImage, source => $"https://localhost:7293/images/{source.MainImage}");
         }
     }
 }

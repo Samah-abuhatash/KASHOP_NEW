@@ -1,4 +1,5 @@
 ﻿using KASHOP.DAL.DTOS.Request.Auth;
+using KASHOP.DAL.DTOS.Request.Token;
 using KASHOP.DAL.DTOS.Response.Auth;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace KASHOP.BLL.serveic.auth
         Task<bool> ConfirmEmailAsync(string token, string userid);
         Task<ForgotPasswordResponse> RequestPasswordReset(ForgotPasswordRequest request);
         Task<ResetpassworldResponse> Resetpassworld(ResetpasworldRequest request);
+        Task<LoginResponse> RefreshTokenAsync(TokenApiModel request);
 
 
     }

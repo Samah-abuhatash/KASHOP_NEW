@@ -10,6 +10,7 @@ namespace KASHOP.DAL.Repostriy.Proudcts
     public interface IProudctsRepsotry
     {
         Task<Product> AddAsync(Product product);
+        Task<List<Product>> GetAllAsync();
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using KASHOP.DAL.DTOS.Response.catgores;
 using KASHOP.DAL.Moadels.catgores;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace KASHOP.DAL.DTOS.Response.Proudct
         public Status Status { get; set; }
         public string CreatedBy { get; set; }
         public string MainImage { get; set; }
+      //  public List<string> SubImages { get; set; }
         public List<Responsetarnslation> Translations { get; set; }
     }
 }

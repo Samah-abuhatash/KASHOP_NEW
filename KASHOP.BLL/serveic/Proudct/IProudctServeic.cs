@@ -11,5 +11,6 @@ namespace KASHOP.BLL.serveic.Proudct
     public interface IProudctServeic
     {
         Task<ProductResponse> CreateProduct(ProductRequest request);
+        Task<List<ProductResponse>> Getall_proudcts_forAdmin();
     }
 }

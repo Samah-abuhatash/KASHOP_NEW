@@ -19,5 +19,6 @@ namespace KASHOP.DAL.Moadels.Proudct
         public Categores Category { get; set; }
 
         public List<ProductTranslation> Translations { get; set; }
+        public List<ProductImage> subImages { get; set; }
     }
 }

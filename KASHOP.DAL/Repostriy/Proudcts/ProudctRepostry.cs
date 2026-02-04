@@ -1,5 +1,7 @@
 ﻿using KASHOP.DAL.DATA;
+using KASHOP.DAL.Moadels.catgores;
 using KASHOP.DAL.Moadels.Proudct;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +23,13 @@ namespace KASHOP.DAL.Repostriy.Proudcts
             await _context.AddAsync(request);
             await _context.SaveChangesAsync();
             return request;
+        }
+        public async Task<List<Product>> GetAllAsync()
+        {
+            return await _context.products
+                .Include(c => c.Translations)
+                .Include(c => c.User)
+                .ToListAsync();
         }
     }
 }

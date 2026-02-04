@@ -2,6 +2,7 @@
 using KASHOP.BLL.serveic.catgores;
 using KASHOP.BLL.serveic.Fileserveis;
 using KASHOP.BLL.serveic.Proudct;
+using KASHOP.BLL.Tokens;
 using KASHOP.DAL.Repostriy.Catgores;
 using KASHOP.DAL.Repostriy.Proudcts;
 using KASHOP.DAL.Utils;
@@ -25,6 +26,7 @@ namespace KASHOP.PL
             services.AddScoped<Ifileservice, FileService>();
             services.AddScoped<IProudctServeic, ProudctServeic>();
             services.AddScoped<IProudctsRepsotry, ProudctRepostry>();
+            services.AddScoped<ITokenService, TokenService>();
 
         }
     }

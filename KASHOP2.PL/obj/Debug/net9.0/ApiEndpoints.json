@@ -118,8 +118,29 @@
         "IsRequired": false
       },
       {
+        "Name": "SubImages",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
         "Name": "CategoryId",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP2.PL.Areas.Admin.ProudctsController",
+    "Method": "index",
+    "RelativePath": "api/admin/Proudcts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lang",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -157,6 +178,22 @@
       {
         "Name": "request",
         "Type": "KASHOP.DAL.DTOS.Request.Auth.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP2.PL.Areas.Identy.AcountController",
+    "Method": "RefreshTokenAsync",
+    "RelativePath": "api/auth/Acount/RefreshToken",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KASHOP.DAL.DTOS.Request.Token.TokenApiModel",
         "IsRequired": true
       }
     ],
