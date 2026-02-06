@@ -332,11 +332,13 @@ public class AuthenticationService : IAuthenticationService
     public async Task<LoginResponse> RefreshTokenAsync( TokenApiModel request)
     {
         string accessToken = request.AccessToken;
+        Console.WriteLine("accest=" + accessToken);
         string refreshToken = request.RefreshToken;
 
         var principal = _tokenService.GetPrincipalFromExpiredToken(accessToken);
 
-        var userName = principal.Identity.Name;
+        var userName = principal.FindFirst("userName")?.Value;
+
 
         var user = await _userManager.Users.FirstOrDefaultAsync(u => u.UserName == userName);
 

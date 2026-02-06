@@ -51,6 +51,17 @@ namespace KASHOP.BLL.serveic.Proudct
 
             return product.Adapt<ProductResponse>();
         }
+        public async Task<List<ProudctsuserResponse>> Getall_proudcts_forUser(string lang = "en")
+        {
+            var proudcts = await _proudctServeic.GetAllAsync();
+            /*  var response = categories.Select(c => new CatgoryUserResponse
+              {
+                  Id = c.Id,
+                  Name = c.translations.Where(t => t.Language == lang).Select(t => t.Name).FirstOrDefault()
+              }).ToList();*/
+            var response = proudcts.BuildAdapter().AddParameters("lang", lang).AdaptToType<List<ProudctsuserResponse>>();
+            return response;
+        }
         public async Task<List<ProductResponse>> Getall_proudcts_forAdmin()
         {
             var products = await _proudctServeic.GetAllAsync();
@@ -58,5 +69,11 @@ namespace KASHOP.BLL.serveic.Proudct
             var response = products.Adapt<List<ProductResponse>>();
             return response;
         }
+
+
+
+        public async Task<ProductUserDetails>GetAllProductsDetailsForUser(int id, string lang = "en")
+        { var product = await _proudctServeic.FindByIdAsync(id);
+            var response = product.BuildAdapter().AddParameters("lang", lang).AdaptToType<ProductUserDetails>(); return response; }
     }
 }

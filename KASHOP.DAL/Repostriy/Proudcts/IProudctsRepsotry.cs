@@ -11,6 +11,7 @@ namespace KASHOP.DAL.Repostriy.Proudcts
     {
         Task<Product> AddAsync(Product product);
         Task<List<Product>> GetAllAsync();
+        Task<Product?> FindByIdAsync(int id);
 
     }
 }

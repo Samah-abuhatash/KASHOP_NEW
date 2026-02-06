@@ -1,4 +1,5 @@
 ﻿using KASHOP.DAL.DTOS.Request.Proudct;
+using KASHOP.DAL.DTOS.Response.catgores;
 using KASHOP.DAL.DTOS.Response.Proudct;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,7 @@ namespace KASHOP.BLL.serveic.Proudct
     {
         Task<ProductResponse> CreateProduct(ProductRequest request);
         Task<List<ProductResponse>> Getall_proudcts_forAdmin();
+        Task<List<ProudctsuserResponse>> Getall_proudcts_forUser(string lang = "en");
+         Task<ProductUserDetails> GetAllProductsDetailsForUser(int id, string lang = "en");
     }
 }

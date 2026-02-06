@@ -31,5 +31,10 @@ namespace KASHOP.DAL.Repostriy.Proudcts
                 .Include(c => c.User)
                 .ToListAsync();
         }
+        public async Task<Product?> FindByIdAsync(int id)
+        {
+            return await _context.products.Include(c => c.Translations)
+                .FirstOrDefaultAsync(c => c.Id == id);
+        }
     }
 }

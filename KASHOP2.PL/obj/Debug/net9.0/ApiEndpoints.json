@@ -262,5 +262,42 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP2.PL.Areas.user.ProudctsController",
+    "Method": "index",
+    "RelativePath": "api/Proudcts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP2.PL.Areas.user.ProudctsController",
+    "Method": "Index",
+    "RelativePath": "api/Proudcts/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
