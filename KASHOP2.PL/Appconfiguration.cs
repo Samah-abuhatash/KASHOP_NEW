@@ -1,8 +1,10 @@
 ﻿using KASHOP.BLL.serveic.auth;
+using KASHOP.BLL.serveic.Carts;
 using KASHOP.BLL.serveic.catgores;
 using KASHOP.BLL.serveic.Fileserveis;
 using KASHOP.BLL.serveic.Proudct;
 using KASHOP.BLL.Tokens;
+using KASHOP.DAL.Repostriy.carts;
 using KASHOP.DAL.Repostriy.Catgores;
 using KASHOP.DAL.Repostriy.Proudcts;
 using KASHOP.DAL.Utils;
@@ -27,6 +29,8 @@ namespace KASHOP.PL
             services.AddScoped<IProudctServeic, ProudctServeic>();
             services.AddScoped<IProudctsRepsotry, ProudctRepostry>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<ICartService, CartService>();
+            services.AddScoped<ICartRepository, CartRepository>();
 
         }
     }

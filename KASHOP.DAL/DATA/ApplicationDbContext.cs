@@ -1,4 +1,5 @@
 ﻿using KASHOP.DAL.Moadels;
+using KASHOP.DAL.Moadels.carts;
 using KASHOP.DAL.Moadels.catgores;
 using KASHOP.DAL.Moadels.Proudct;
 using Microsoft.AspNetCore.Http;
@@ -23,6 +24,7 @@ namespace KASHOP.DAL.DATA
         public DbSet<Product>products { get; set; }
         public DbSet<ProductTranslation>productTranslations { get; set; }
         public DbSet<ProductImage> productImages { get; set; }
+        public DbSet<Cart> carts { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IHttpContextAccessor httpContextAccessor)
            : base(options)
         {
@@ -44,6 +46,10 @@ namespace KASHOP.DAL.DATA
                     .WithMany()
                     .HasForeignKey(c => c.CreatedBy)
                     .OnDelete(DeleteBehavior.NoAction);
+            builder.Entity<Cart>().HasOne(c => c.User)
+                   .WithMany()
+                   .HasForeignKey(c => c.UserId)
+                   .OnDelete(DeleteBehavior.NoAction);
         }
         //audit 
         public override int SaveChanges()

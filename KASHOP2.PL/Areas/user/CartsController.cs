@@ -1,0 +1,36 @@
+﻿using KASHOP.BLL.serveic.Carts;
+using KASHOP.BLL.serveic.catgores;
+using KASHOP.DAL.DTOS.Request.carts;
+using KASHOP2.PL.Resources;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
+using System.Security.Claims;
+
+namespace KASHOP2.PL.Areas.user
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    [Authorize] 
+    public class CartsController : ControllerBase
+    {
+        private readonly ICartService _cartService;
+        private readonly IStringLocalizer<SharedResource> _localizer;
+
+        public CartsController(ICartService cartService , IStringLocalizer<SharedResource> localizer)
+        {
+            _cartService = cartService;
+            _localizer = localizer;
+        }
+        [HttpPost("")]
+        public async Task<IActionResult> AddToCart([FromBody] AddToCartRequest request)
+        {
+            var userId = User.FindFirstValue("id");
+            var result = await _cartService.AddToCartAsync(userId, request);
+
+            return Ok(result);
+        }
+
+    }
+}

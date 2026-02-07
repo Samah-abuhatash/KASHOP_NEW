@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop2.pl\\areas\\user\\proudctscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|solutionrelative:kashop2.pl\\areas\\user\\proudctscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.bll\\serveic\\proudct\\proudctserveic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\serveic\\proudct\\proudctserveic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop2.pl\\appconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|solutionrelative:kashop2.pl\\appconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.bll\\mapsterconfigration\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\mapsterconfigration\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.bll\\serveic\\proudct\\iproudctserveic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{117CAC6D-A40C-435A-8276-2E7DEAFD1B03}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\serveic\\proudct\\iproudctserveic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop2.pl\\areas\\user\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|solutionrelative:kashop2.pl\\areas\\user\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop2.pl\\areas\\user\\categorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A59FA45-5D06-4C99-A665-D5F5AF9D6CF9}|KASHOP2.PL\\KASHOP2.PL.csproj|solutionrelative:kashop2.pl\\areas\\user\\categorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\omen\\onedrive\\documents\\asp12\\api\\project2api\\kashop2\\kashop.dal\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EC619E-245B-4894-9B31-B2E8C1FA5D70}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,15 +38,24 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Appconfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Appconfiguration.cs",
+              "RelativeDocumentMoniker": "KASHOP2.PL\\Appconfiguration.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Appconfiguration.cs*",
+              "RelativeToolTip": "KASHOP2.PL\\Appconfiguration.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T04:08:47.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MapsterConfig.cs",
               "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\Mapsterconfigration\\MapsterConfig.cs",
               "RelativeDocumentMoniker": "KASHOP.BLL\\Mapsterconfigration\\MapsterConfig.cs",
@@ -50,46 +63,46 @@
               "RelativeToolTip": "KASHOP.BLL\\Mapsterconfigration\\MapsterConfig.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T17:10:40.559Z",
+              "WhenOpened": "2026-02-07T04:07:53.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DATA\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\DATA\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.DAL\\DATA\\ApplicationDbContext.cs",
+              "RelativeToolTip": "KASHOP.DAL\\DATA\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAiwGoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T04:00:40.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IProudctServeic.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\Proudct\\IProudctServeic.cs",
-              "RelativeDocumentMoniker": "KASHOP.BLL\\serveic\\Proudct\\IProudctServeic.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\Proudct\\IProudctServeic.cs",
-              "RelativeToolTip": "KASHOP.BLL\\serveic\\Proudct\\IProudctServeic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "CategoresController.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\user\\CategoresController.cs",
+              "RelativeDocumentMoniker": "KASHOP2.PL\\Areas\\user\\CategoresController.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\user\\CategoresController.cs",
+              "RelativeToolTip": "KASHOP2.PL\\Areas\\user\\CategoresController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T17:04:38.872Z",
+              "WhenOpened": "2026-02-07T03:55:48.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProudctsController.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\user\\ProudctsController.cs",
-              "RelativeDocumentMoniker": "KASHOP2.PL\\Areas\\user\\ProudctsController.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\user\\ProudctsController.cs",
-              "RelativeToolTip": "KASHOP2.PL\\Areas\\user\\ProudctsController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAawCQAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CartsController.cs",
+              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\user\\CartsController.cs",
+              "RelativeDocumentMoniker": "KASHOP2.PL\\Areas\\user\\CartsController.cs",
+              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP2.PL\\Areas\\user\\CartsController.cs",
+              "RelativeToolTip": "KASHOP2.PL\\Areas\\user\\CartsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T17:01:01.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProudctServeic.cs",
-              "DocumentMoniker": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\Proudct\\ProudctServeic.cs",
-              "RelativeDocumentMoniker": "KASHOP.BLL\\serveic\\Proudct\\ProudctServeic.cs",
-              "ToolTip": "C:\\Users\\OMEN\\OneDrive\\Documents\\asp12\\api\\project2api\\KASHOP2\\KASHOP.BLL\\serveic\\Proudct\\ProudctServeic.cs",
-              "RelativeToolTip": "KASHOP.BLL\\serveic\\Proudct\\ProudctServeic.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T16:38:42.143Z",
+              "WhenOpened": "2026-02-07T03:55:15.424Z",
               "EditorCaption": ""
             }
           ]
