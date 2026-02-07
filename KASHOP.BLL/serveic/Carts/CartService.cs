@@ -44,10 +44,21 @@ namespace KASHOP.BLL.serveic.Carts
                 };
             }
 
-            var cart = request.Adapt<Cart>();
-            cart.UserId = userID;
+            var cartItem = await _cartRepository.GetCartItemAsync(userID, request.ProductId);
 
-            await _cartRepository.createAsync(cart);
+            if (cartItem is not null)
+            {
+                cartItem.Count += request.Count;
+                await _cartRepository.UpdateAsync(cartItem);
+            }
+            else
+            {
+                var cart = request.Adapt<Cart>();
+                cart.UserId = userID;
+
+                await _cartRepository.createAsync(cart);
+            }
+           
 
             return new BaseResponse
             {
@@ -76,5 +87,16 @@ namespace KASHOP.BLL.serveic.Carts
               
             };
         }
+        public async Task<BaseResponse> ClearCartAsync(string userId)
+        {
+            await _cartRepository.ClearCartAsync(userId);
+
+            return new BaseResponse
+            {
+                Success = true,
+                messages = "cart cleared successfully"
+            };
+        }
+
     }
 }

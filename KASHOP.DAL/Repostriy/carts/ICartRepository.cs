@@ -12,6 +12,9 @@ namespace KASHOP.DAL.Repostriy.carts
     {
         Task<Cart> createAsync(Cart request);
         Task<List<Cart>> GetUserCartAsync(string userId);
+        Task<Cart?> GetCartItemAsync(string userid, int productId);
+        Task<Cart> UpdateAsync(Cart cart);
+        Task ClearCartAsync(string userId);
 
     }
 }

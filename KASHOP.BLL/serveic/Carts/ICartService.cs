@@ -13,6 +13,7 @@ namespace KASHOP.BLL.serveic.Carts
     {
         Task<BaseResponse> AddToCartAsync(string userID, AddToCartRequest request);
         Task<CartSummaryResponse> GetUserCartAsync(string userId, string lang = "en");
+        Task<BaseResponse> ClearCartAsync(string userId);
 
     }
 }

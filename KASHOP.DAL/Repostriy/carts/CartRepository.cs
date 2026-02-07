@@ -24,7 +24,7 @@ namespace KASHOP.DAL.Repostriy.carts
             await _context.SaveChangesAsync();
             return request;
         }
-        //get information 
+        //get information all
         public  async Task<List<Cart>> GetUserCartAsync(string userId)
         {
             return await _context.carts
@@ -34,6 +34,25 @@ namespace KASHOP.DAL.Repostriy.carts
         .ToListAsync();
 
 
+        }
+        //cart proudct found or not 
+        public async Task<Cart?> GetCartItemAsync(string userid, int productId)
+        {
+            return await _context.carts.Include(c => c.Product)
+                .FirstOrDefaultAsync(c => c.UserId == userid && c.ProductId == productId);
+        }
+        public async Task<Cart> UpdateAsync(Cart cart)
+        {
+            _context.carts.Update(cart);
+            await _context.SaveChangesAsync();
+            return cart;
+        }
+        public async Task ClearCartAsync(string userId)
+        {
+            var items = await _context.carts.Where(c => c.UserId == userId).ToListAsync();
+            _context.carts.RemoveRange(items);
+
+            await _context.SaveChangesAsync();
         }
     }
 }

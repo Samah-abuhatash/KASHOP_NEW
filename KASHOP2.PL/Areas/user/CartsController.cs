@@ -38,6 +38,12 @@ namespace KASHOP2.PL.Areas.user
             var result = await _cartService.GetUserCartAsync(userId);
             return Ok(result);
         }
-
+        [HttpDelete("")]
+        public async Task<IActionResult> ClearCart()
+        {
+            var userId = User.FindFirstValue("id");
+            var result = await _cartService.ClearCartAsync(userId);
+            return Ok(result);
+        }
     }
 }
