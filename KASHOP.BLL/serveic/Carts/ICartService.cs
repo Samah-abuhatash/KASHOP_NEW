@@ -1,4 +1,5 @@
 ﻿using KASHOP.DAL.DTOS.Request.carts;
+using KASHOP.DAL.DTOS.Response.Carts;
 using KASHOP.DAL.DTOS.Response.classbase;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace KASHOP.BLL.serveic.Carts
     public  interface ICartService
     {
         Task<BaseResponse> AddToCartAsync(string userID, AddToCartRequest request);
+        Task<CartSummaryResponse> GetUserCartAsync(string userId, string lang = "en");
 
     }
 }

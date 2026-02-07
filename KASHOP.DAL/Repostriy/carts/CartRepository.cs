@@ -17,12 +17,23 @@ namespace KASHOP.DAL.Repostriy.carts
         {
             _context = context;
         }
-
+        //add 
         public async  Task<Cart> createAsync(Cart request)
         {
             await _context.AddAsync(request);
             await _context.SaveChangesAsync();
             return request;
+        }
+        //get information 
+        public  async Task<List<Cart>> GetUserCartAsync(string userId)
+        {
+            return await _context.carts
+        .Where(c => c.UserId == userId)
+        .Include(c => c.Product)
+        .ThenInclude(c => c.Translations)
+        .ToListAsync();
+
+
         }
     }
 }

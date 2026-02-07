@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace KASHOP.DAL.DTOS.Response.Carts
 {
-    internal class CartSummaryResponse
+    public class CartSummaryResponse
     {
+        public List<CartResponse> Items { get; set; }
+
+        public decimal CartTotal => Items.Sum(i => i.TotalPrice);
     }
+
 }

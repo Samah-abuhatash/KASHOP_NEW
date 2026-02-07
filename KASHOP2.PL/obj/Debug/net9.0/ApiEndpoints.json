@@ -264,6 +264,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KASHOP2.PL.Areas.user.CartsController",
+    "Method": "Index",
+    "RelativePath": "api/Carts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KASHOP2.PL.Areas.user.CategoresController",
     "Method": "index",
     "RelativePath": "api/Categores",

@@ -1,4 +1,5 @@
 ﻿using KASHOP.DAL.DTOS.Request.carts;
+using KASHOP.DAL.DTOS.Response.Carts;
 using KASHOP.DAL.DTOS.Response.classbase;
 using KASHOP.DAL.Moadels.carts;
 using KASHOP.DAL.Repostriy.carts;
@@ -52,6 +53,27 @@ namespace KASHOP.BLL.serveic.Carts
             {
                 Success = true,
                 messages = "Product added successfully"
+            };
+        }
+
+        public async Task<CartSummaryResponse> GetUserCartAsync(string userId, string lang = "en")
+        {
+            var cartItems = await _cartRepository.GetUserCartAsync(userId);
+            //var response = cartItems.Adapt<CartResponse>();
+
+            var items = cartItems.Select(c => new CartResponse
+            {
+                ProductId = c.ProductId,
+                ProductName = c.Product.Translations.FirstOrDefault(t => t.Language == lang)?.Name ,
+                Count = c.Count,
+                Price = c.Product.Price,
+               
+            }).ToList();
+
+            return new CartSummaryResponse
+            {
+                Items = items,
+              
             };
         }
     }

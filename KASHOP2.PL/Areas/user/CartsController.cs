@@ -31,6 +31,13 @@ namespace KASHOP2.PL.Areas.user
 
             return Ok(result);
         }
+        [HttpGet("")]
+        public async Task<IActionResult> Index()
+        {
+            var userId = User.FindFirstValue("id");
+            var result = await _cartService.GetUserCartAsync(userId);
+            return Ok(result);
+        }
 
     }
 }

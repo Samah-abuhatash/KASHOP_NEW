@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace KASHOP.DAL.DTOS.Response.Carts
 {
-    internal class CartResponse
+    public  class CartResponse
     {
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public int Count { get; set; }
+        public decimal Price { get; set; }
+
+        public decimal TotalPrice => Count * Price;
     }
 }
